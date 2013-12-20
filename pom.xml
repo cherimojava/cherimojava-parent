@@ -148,7 +148,7 @@
                 <version>2.12.4</version>
                 <configuration>
                     <includes>
-                        <include>**/_*.java</include>
+                        <include>**/Suite*.java</include>
                     </includes>
                 </configuration>
             </plugin>
