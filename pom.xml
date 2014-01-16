@@ -95,6 +95,12 @@
                 <version>1.7.5</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>com.github.cschoell</groupId>
+                <artifactId>junit-dynamicsuite</artifactId>
+                <version>0.2.2</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -113,7 +119,6 @@
                         <project>
                             cherimojava
                         </project>
-                        <year>${2012-}</year>
                     </properties>
                     <encoding>UTF-8</encoding>
                 </configuration>
