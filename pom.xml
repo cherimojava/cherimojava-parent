@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>7</version>
+        <version>8</version>
     </parent>
 
     <groupId>com.github.cherimojava</groupId>
@@ -106,22 +106,29 @@
 
     <build>
         <plugins>
+            <!--License header-->
             <plugin>
-                <groupId>com.google.code.maven-license-plugin</groupId>
-                <artifactId>maven-license-plugin</artifactId>
-                <version>1.4.0</version>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>2.6</version>
                 <configuration>
-                    <header>${parentDir}/licenseHeader.tpl</header>
+                    <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
+                    <properties>
+                        <owner>cherimojava</owner>
+                        <project.inceptionYear>2013</project.inceptionYear>
+                        <email>${project.url}</email>
+                    </properties>
                     <includes>
                         <include>**/*.java</include>
                     </includes>
-                    <properties>
-                        <project>
-                            cherimojava
-                        </project>
-                    </properties>
-                    <encoding>UTF-8</encoding>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
