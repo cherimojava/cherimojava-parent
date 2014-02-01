@@ -1,4 +1,4 @@
-cherimojava-parent ![Build status](https://travis-ci.org/cherimojava/cherimojava-parent.png?branch=master)
+cherimojava-parent [![Build Status](https://travis-ci.org/cherimojava/cherimojava-parent.png?branch=master)](https://travis-ci.org/cherimojava/cherimojava-parent)
 ===========
 Base maven parent for cherimojava based artifacts, providing a common version stack of artifacts and plugins. Each artifact for cherimojava should use this as parent pom.
 POM file is semantic versioned in this way:
