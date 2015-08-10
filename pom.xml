@@ -171,6 +171,7 @@
                     <includes>
                         <include>**/*.java</include>
                     </includes>
+                    <strictCheck>false</strictCheck>
                 </configuration>
                 <executions>
                     <execution>
