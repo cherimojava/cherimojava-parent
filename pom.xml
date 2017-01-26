@@ -26,6 +26,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.boot.version>1.4.4.RELEASE</spring.boot.version>
+        <inceptionYear>2013</inceptionYear>
     </properties>
 
     <prerequisites>
@@ -139,7 +140,7 @@
                     <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
                     <properties>
                         <owner>cherimojava</owner>
-                        <project.inceptionYear>2013</project.inceptionYear>
+                        <project.inceptionYear>${inceptionYear}</project.inceptionYear>
                         <email>${project.url}</email>
                     </properties>
                     <includes>
